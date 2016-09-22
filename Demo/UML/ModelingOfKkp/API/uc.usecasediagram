@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="13f41d85-0468-4717-b903-4cfc0dba23f8" name="ApiUC" linkedPackageId="abb9b090-0a8c-4104-bc5f-32697fdb5fc2" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="2b4de036-6a2f-4560-9691-497daae5f110">
+      <profileInstance Id="a0dcd46f-3942-4a3a-9a73-de62c8528866" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="9030d6ec-03c9-4529-9d4a-778c96f6e673">
+      <profileInstance Id="07e8b6f1-c786-403e-bb0d-bf19332ab734" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="dd19086f-3186-4ded-a3ab-6d2f32fb80a8" name="Merchant Developer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7c215d7-23c7-4512-ab91-f79c672f80a5" />
+        <targetEnds>
+          <association Id="c7aeed97-6c48-435f-a141-4044f1824d2d" isDerived="false" sourceEndRoleName="Merchant Developer" targetEndRoleName="Read API" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1d0a8b1f-b5d0-4189-a888-47547ad26259" LastKnownName="Consult Documents" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b3ae2553-f2b2-4bcc-b1c4-a985ce57617f" name="Merchant Developer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7b1461ad-670c-49cb-bba4-e164dccb8277" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d43434bf-181a-4090-9cad-8cd4eb9c4160" name="Read API" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="44bca01e-3b20-401a-a8ad-a335166e3eea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dc2ffd8d-03e7-44ac-a798-7d1fa1eb8646" />
+          </association>
+          <association Id="62ac521d-c555-4558-a024-9e231090041b" isDerived="false" sourceEndRoleName="Merchant Developer" targetEndRoleName="Download API" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="002a66b1-c11d-4e0a-9d40-fab0712a81e3" LastKnownName="Download Documents" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73fe2df3-e4f9-47b3-be00-a133ad6b5252" name="Merchant Developer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="964ebb79-66d2-45d1-bee3-499c80bb9e93" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b06d1be7-eb13-4cbf-ad7d-3b2e50edda18" name="Download API" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="46dfd423-4d01-4628-9eff-0dfbc562c936" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a5ee6d66-8494-4497-982f-efffaf981313" />
+          </association>
+          <association Id="a2618647-1709-4fb7-a6ea-c1a99a8c4591" isDerived="false" sourceEndRoleName="Merchant Developer" targetEndRoleName="Online Help" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="61ac981e-b0a6-4ac4-9969-44cb060dcf05" LastKnownName="Online Help" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="825da655-e1d4-476c-9a4a-6b8237baa15c" name="Merchant Developer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd9b4d2b-7994-43f8-bf55-b49d25a7fc4e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2bb6fb2-83d5-4e14-a267-acd90d6a9b5a" name="Online Help" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2d05720-4e0d-4f55-a0c4-fd1a823d2d07" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bc4ee1ad-ea1d-4e5e-9fa1-23d72f5d7081" />
+          </association>
+          <association Id="7cc921be-adaf-40d8-a595-96d4d6a3d996" isDerived="false" sourceEndRoleName="Merchant Developer" targetEndRoleName="Search" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e05381c0-2cb8-4b02-beb6-d132ad1e3ee6" LastKnownName="Search" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac398e07-f3d6-422e-8e00-eb3cac9021ed" name="Merchant Developer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad33ee1a-0069-41ef-bec9-f79534b2bec9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3541d027-0581-4467-8260-e93dcd06b7e9" name="Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="00216e4e-db7c-431d-8942-33fc6275732d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="19a2c7bb-f949-449d-aca5-05241bff926d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1d0a8b1f-b5d0-4189-a888-47547ad26259" name="Consult Documents" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5d839d01-d216-4847-a3d8-ce53fd77c9a3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e05381c0-2cb8-4b02-beb6-d132ad1e3ee6" name="Search" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b89a9172-7e21-4503-9496-75fc86874048" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="002a66b1-c11d-4e0a-9d40-fab0712a81e3" name="Download Documents" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7ea53bf5-6393-47d8-bb82-af6646085d6a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="61ac981e-b0a6-4ac4-9969-44cb060dcf05" name="Online Help" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9725d00-6bdf-478f-b0ec-e737764d4c8a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="abb9b090-0a8c-4104-bc5f-32697fdb5fc2" name="ModelingOfKkp">
+    <elementDefinition Id="fff80fce-0e4b-49ec-87bc-de9de829d50e" />
+  </package>
+</useCaseModelRoot>

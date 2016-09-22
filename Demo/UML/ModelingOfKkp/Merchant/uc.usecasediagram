@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e9b2777e-5170-481f-be03-4589df0f585f" name="MerchantUC" linkedPackageId="4f21ae01-5001-49a6-91b9-a6c76a9ece3c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="a7f27631-4655-4617-9c3f-3462f9a99df8">
+      <profileInstance Id="a47d2e16-fa50-4990-8b03-62eb7d951f00" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="41a9cdaf-2408-4b92-90ae-9ba6e6b9e68c">
+      <profileInstance Id="b22e5878-51ba-4773-90d8-233eef14bbb1" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="a57fbbec-7f43-4c66-9238-2a97a45517b7" name="Merchant" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c4f6d21-8e60-44df-96af-4cd32eac1f18" />
+        <targetEnds>
+          <association Id="eb3ef67d-2431-41af-9589-0ceb6ef321d4" isDerived="false" sourceEndRoleName="Merchant" targetEndRoleName="Cash" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="46824681-f1a9-45dd-b892-c2382c746950" LastKnownName="Cash" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="68fc2927-fa75-4516-91df-ab9d34b44494" name="Merchant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c455077a-c47b-4f65-9c03-b0fae9c63cb8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e2b92857-9846-46c5-80c6-1eb1e11700bd" name="Cash" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b82d2626-8621-4492-ac1a-3e436071404a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5f653088-c6b5-4908-a82c-b6c1b8957533" />
+          </association>
+          <association Id="2438a652-393a-4f6a-8b46-6e5f42ac9937" isDerived="false" sourceEndRoleName="Merchant" targetEndRoleName="Registering" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9a977962-c3f6-45c2-8c56-106d0b6c1236" LastKnownName="Registering" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33849ddd-23a2-4691-907c-054bd9177bb0" name="Merchant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e5584bbc-fbe7-4c7d-ac97-79054e9f9e9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0fa3d5b-5c84-4431-8cde-3758e1773a2d" name="Registering" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f75a170d-1133-4fe8-ab6f-ac907223889c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b4c6d596-c10e-4645-bf2e-1c18efa03c72" />
+          </association>
+          <association Id="e4bf7225-4c7c-41d2-9981-b50c61e17158" isDerived="false" sourceEndRoleName="Merchant" targetEndRoleName="View self Infomation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c60bad04-6318-4254-8648-12bd037d5122" LastKnownName="View self Infomation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c664ccce-0bfa-4b41-babd-6ae87c901501" name="Merchant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dda02cb6-ec3b-493c-8d3a-119b6ae76029" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe85b948-0fcb-4309-9ae1-4214b92618d1" name="View self Infomation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1e6e46a0-8eaf-4add-94c4-f7c209a3e410" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c78967d0-117c-4c2a-817e-5c4e829b902c" />
+          </association>
+          <association Id="480a59e0-811a-498b-8d1f-e8d95f36232d" isDerived="false" sourceEndRoleName="Merchant" targetEndRoleName="Recharge" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="663a4dcc-bf58-4d33-b57b-830cfddd1754" LastKnownName="Recharge" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0243911d-9557-47df-a9e5-5eaa7cbb2ab5" name="Merchant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="40ce7c68-fb70-451a-b2db-22a9fdfea654" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2528f758-2616-4602-9d22-f6436bcb5852" name="Recharge" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e67c48b1-ae75-4631-a517-e16d4985f6b1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa86f4a9-475e-43c9-b3a3-467c4106a822" />
+          </association>
+          <association Id="f7114ede-45b1-428b-9113-a11516d84151" isDerived="false" sourceEndRoleName="Merchant" targetEndRoleName="Order" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="49c5ac7f-db2d-4487-be80-1ca308bb3918" LastKnownName="Order" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27f22b29-223c-40c2-adf6-217b0056be40" name="Merchant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="55407525-3597-4d08-948b-8db87753106b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f882c445-145f-4020-bb28-32703bd5f88e" name="Order" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="06af4e2f-519e-4566-9043-280b3c5ec539" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f6868fa1-f9b1-4b19-a59c-dddb4df7d2bb" />
+          </association>
+          <association Id="4a914265-5dc2-41fa-9bc4-32020ac4fe0a" isDerived="false" sourceEndRoleName="Merchant" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="901ffc70-d806-4d47-80d9-c7bf6d40649c" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96478992-57d8-4829-bcc8-4013575cfa89" name="Merchant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8d0a0c4-82db-4362-a9d0-b5a1dda83039" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7be6eff5-3cb6-489f-8745-53c8ce72bffa" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="adb26401-bd4b-466f-8871-46254babe2cc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a19420f-a717-4a8b-b4de-befb38aa60d4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9a977962-c3f6-45c2-8c56-106d0b6c1236" name="Registering" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6219e2df-b872-4185-b48a-da343a8678f4" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c60bad04-6318-4254-8648-12bd037d5122" name="View self Infomation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c35f7d70-cf58-47c6-a176-b775552227a4" />
+        <suppliersInternal>
+          <dependency Id="b55f79f3-eace-42cc-bdd9-adb8c2342a56">
+            <useCaseMoniker Id="901ffc70-d806-4d47-80d9-c7bf6d40649c" LastKnownName="Login" />
+            <elementDefinition Id="ba84a2a0-81c3-446c-9179-b8783320a104" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="663a4dcc-bf58-4d33-b57b-830cfddd1754" name="Recharge" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="36edf215-fda4-4a9d-b697-f5fe60692e30" />
+        <suppliersInternal>
+          <dependency Id="b60bac65-1c59-404b-be82-a305ae72f283">
+            <useCaseMoniker Id="901ffc70-d806-4d47-80d9-c7bf6d40649c" LastKnownName="Login" />
+            <elementDefinition Id="b3a3b1e1-2435-4061-85f1-941bc3e59e4f" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="46824681-f1a9-45dd-b892-c2382c746950" name="Cash" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="00878ad1-ae9c-4530-b577-6360f3f50deb" />
+        <suppliersInternal>
+          <dependency Id="3e2cd52e-7187-419f-a167-eed96f0bddac">
+            <useCaseMoniker Id="663a4dcc-bf58-4d33-b57b-830cfddd1754" LastKnownName="Recharge" />
+            <elementDefinition Id="8f126ff7-f2d8-4bd6-928f-6c1a8589f4c1" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="49c5ac7f-db2d-4487-be80-1ca308bb3918" name="Order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8997aaab-86b6-47ea-b656-4c74f75e42ae" />
+        <suppliersInternal>
+          <dependency Id="d33add39-ad7c-40e9-bd60-241196cef43b">
+            <useCaseMoniker Id="663a4dcc-bf58-4d33-b57b-830cfddd1754" LastKnownName="Recharge" />
+            <elementDefinition Id="5fe8f7e1-811c-4333-840e-f44756a54bed" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="901ffc70-d806-4d47-80d9-c7bf6d40649c" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ceb6e24b-d80b-47f7-bf7d-31cc67288359" />
+        <suppliersInternal>
+          <dependency Id="d3f0aa5f-04d7-43bf-8b9f-b7012c7a7ad1">
+            <useCaseMoniker Id="9a977962-c3f6-45c2-8c56-106d0b6c1236" LastKnownName="Registering" />
+            <elementDefinition Id="d79c918b-89b3-4971-ad38-deca4016bcbe" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4f21ae01-5001-49a6-91b9-a6c76a9ece3c" name="ModelingOfKkp">
+    <elementDefinition Id="fff80fce-0e4b-49ec-87bc-de9de829d50e" />
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b1632704-d28e-416b-9354-27afed1803b3" name="RESTfulUc" linkedPackageId="4120d16a-e991-4d79-8c86-4b49d1be2def" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="9a56aa9c-ee5f-45e1-93d6-6f5505f679c8">
+      <profileInstance Id="debc9897-0197-4090-bdfd-c8a7b12329c9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5ac3bb1e-f792-422d-b636-87f023a17b22">
+      <profileInstance Id="ab454ccb-e31f-44f1-8ae0-6ac466bf15ce" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="19bab00f-2c59-4fdc-8b02-710a0d46ef46" name="Merchant Service" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="792a7c63-f31f-4f59-8b91-514747519145" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="4120d16a-e991-4d79-8c86-4b49d1be2def" name="ModelingOfKkp">
+    <elementDefinition Id="fff80fce-0e4b-49ec-87bc-de9de829d50e" />
+  </package>
+</useCaseModelRoot>

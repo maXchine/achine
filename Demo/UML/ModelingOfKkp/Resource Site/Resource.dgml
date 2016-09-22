@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Documents" Bounds="-1002.34654541016,-101.429669494629,85.65,25.24" />
+    <Node Id="Html" Bounds="-564.211876760691,-237.669848630858,50,25.24" Label="html" UseManualLocation="True" />
+    <Node Id="Images" Bounds="-913.366504720052,-156.669751281738,61.4433333333334,25.24" />
+    <Node Id="Javascripts" Bounds="-710.565310094024,-172.669848630858,81.3533333333335,25.24" UseManualLocation="True" />
+    <Node Id="Media" Bounds="-562.291324720365,-390.909848630858,61.4433333333334,25.24" Label="Images" UseManualLocation="True" />
+    <Node Id="SourceSite" Bounds="-810.016139378074,-433.389848630858,84.3100000000001,25.24" Label="Source Site" UseManualLocation="True" />
+    <Node Id="StaticFiles" Bounds="-742.462334063495,-378.17357024481,80.3833333333332,25.24" Label="Static Files" UseManualLocation="True" />
+    <Node Id="Styles" Bounds="-797.594758053699,-253.909848630858,53.3033333333333,25.24" UseManualLocation="True" />
+    <Node Id="TheFunction" Bounds="-1152.85874342736,-332.909848630858,153.293333333333,85.24" Group="Expanded" Label="The Function" UseManualLocation="True" />
+    <Node Id="UploadFiles" Bounds="-879.051703470845,-378.149848630858,90.4300000000001,25.24" Label="Upload Files" UseManualLocation="True" />
+    <Node Id="UploadFiles1" Bounds="-1022.34653750879,-196.669848630858,190.423374023438,140.480279879761" Group="Expanded" Label="Upload Files" UseManualLocation="True" />
+    <Node Id="UploadFilesInterface" Bounds="-1132.85873331706,-292.909713048759,113.293333333333,25.24" Label="Upload Files API" />
+    <Node Id="Videos" Bounds="-1002.34650472005,-156.669705505371,58.98,25.24" />
+  </Nodes>
+  <Links>
+    <Link Source="SourceSite" Target="StaticFiles" Bounds="-752.888051098535,-408.149848630858,28.7120219654312,24.1997983608298" />
+    <Link Source="SourceSite" Target="UploadFiles" Bounds="-811.863501871397,-408.149848630858,28.92974086315,24.222284526939" />
+    <Link Source="StaticFiles" Target="Html" Bounds="-687.623535252542,-352.921677905273,126.9462338275,109.37719550641" />
+    <Link Source="StaticFiles" Target="Javascripts" Bounds="-700.28196291587,-352.921677905273,27.0036649794744,171.361534217014" />
+    <Link Source="StaticFiles" Target="Media" Bounds="-662.078993733724,-375.3280163714,90.8126158538139,6.77566651297985" />
+    <Link Source="StaticFiles" Target="Styles" Bounds="-759.615651210298,-352.933588867188,50.3707433149968,91.1465761860566" />
+    <Link Source="TheFunction" Target="UploadFilesInterface" Category="Contains" />
+    <Link Source="UploadFiles" Target="Documents" Bounds="-775.270815594581,-308.639000146986,13.5362883181157,281.970536051402" />
+    <Link Source="UploadFiles" Target="Images" Bounds="-758.145023592783,-308.639000146986,53.6590860588866,226.961506324034" />
+    <Link Source="UploadFiles" Target="UploadFilesInterface" Bounds="-925.742287693526,-414.873606760003,115.92690147751,227.699429717912" />
+    <Link Source="UploadFiles" Target="Videos" Bounds="-787.286659274295,-308.639000146986,24.7790093432346,226.773334437491" />
+    <Link Source="UploadFiles1" Target="Documents" Category="Contains" />
+    <Link Source="UploadFiles1" Target="Images" Category="Contains" />
+    <Link Source="UploadFiles1" Target="Videos" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="包含" Description="链接的源是否包含目标对象" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="包含者" IsContainment="True" OutgoingActionLabel="包含" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

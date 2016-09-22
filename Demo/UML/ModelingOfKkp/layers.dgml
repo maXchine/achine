@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="API/Helper" Category="Category8" Bounds="-1000,-382.38,132.28,25.24" Label="API Documentation" UseManualLocation="True" />
+    <Node Id="BackgroundPlatform" Category="Category2" Bounds="-922,-620.38,57.95,25.24" Label="Admin" UseManualLocation="True" />
+    <Node Id="Kkp" Category="Category10" Bounds="-1152,-493,86.7166666666667,25.24" Label="Kkp System" UseManualLocation="True" />
+    <Node Id="MainSite" Category="Category2" Bounds="-1093,-605.38,72.52,25.24" Label="Main site" UseManualLocation="True" />
+    <Node Id="Merchant" Category="Category8" Bounds="-1008,-276.38,75.02,25.24" UseManualLocation="True" />
+    <Node Id="RESTfulAPI" Category="Category8" Bounds="-830.063333333333,-320.880009765625,85.8466666666668,25.24" Label="RESTful API" UseManualLocation="True" />
+    <Node Id="RESTfulAPI1" Category="Category2" Bounds="-1063.06333333333,-705.880009765625,85.8466666666668,25.24" Label="RESTful API" UseManualLocation="True" />
+    <Node Id="ResourceServer" Category="Category2" Bounds="-1235.19333333242,-632.880009765625,112.193333333334,25.24" Label="Resource Server" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Kkp" Target="API/Helper" Bounds="-1088.70182473644,-467.760004882813,127.297153800297,80.5668577719033" />
+    <Link Source="Kkp" Target="BackgroundPlatform" Bounds="-1087.27973564914,-590.562240955654,165.144006332989,97.5622360728411" />
+    <Link Source="Kkp" Target="MainSite" Bounds="-1102.81323217906,-571.96930560039,36.4712420314895,78.9693007175772" />
+    <Link Source="Kkp" Target="Merchant" Bounds="-1100.59312532259,-467.760004882813,117.21517644148,183.79184641099" />
+    <Link Source="Kkp" Target="ResourceServer" Bounds="-1168.69162319999,-599.602037346937,53.6934970599948,106.602032464124" />
+    <Link Source="MainSite" Target="RESTfulAPI1" Bounds="-1052.14405300159,-672.183343354355,24.3283619741967,66.8033335887303" />
+    <Link Source="Merchant" Target="RESTfulAPI" Bounds="-932.979990234375,-295.744165065154,94.2719002656929,22.8802824393978" />
+  </Links>
+  <Categories>
+    <Category Id="Category10" Label="类别 10" Background="#FF672878" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category8" Label="类别 8" Background="#FF44CCCC" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 10" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category10')" />
+      <Setter Property="Background" Value="#FF672878" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 8" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category8')" />
+      <Setter Property="Background" Value="#FF44CCCC" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+  </Styles>
+</DirectedGraph>

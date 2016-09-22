@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48546d94-90f7-4d8b-a538-61f6a9399a2d}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ModelingOfKkp</Name>
+    <RootNamespace>ModelingOfKkp</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Admin\uc.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Admin\uc.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Admin\uc.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="API\uc.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="API\uc.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>API\uc.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="layers.dgml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Main Site\uc.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Main Site\uc.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Main Site\uc.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Merchant\uc.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Merchant\uc.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Merchant\uc.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Resource Site\Resource.dgml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RESTful\uc.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="RESTful\uc.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>RESTful\uc.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="Main Site\RESTful" />
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingOfKkp.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Main Site" />
+    <Folder Include="API" />
+    <Folder Include="Merchant" />
+    <Folder Include="Admin" />
+    <Folder Include="Resource Site" />
+    <Folder Include="RESTful" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Service.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Service.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Service.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Service.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Service.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>

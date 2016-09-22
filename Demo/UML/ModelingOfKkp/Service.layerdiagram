@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="333d7fc6-afd2-43dd-9c91-8d65acc7f6a2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="55698d29-65cf-4656-a768-35ce53950517" name="Main Site" />
+    <layer Id="f36ada01-8902-4d87-a846-74d5560e1db4" name="API" />
+    <layer Id="dc855f1a-a8fb-43e8-a633-07953228ebed" name="Merchant" />
+    <layer Id="6808a5cb-97ca-42fe-8b82-2f151951d9ba" name="Admin" />
+    <layer Id="4ee6af2b-209e-4edc-b039-7d20c2ca1089" name="RESTful Service " />
+    <layer Id="25dc30e3-1a2a-4328-af27-651791d4cbdb" name="Resource Site" />
+  </layers>
+</layerModel>

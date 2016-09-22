@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="RESTfulUc">
+  <useCaseModelRootMoniker Id="b1632704-d28e-416b-9354-27afed1803b3" />
+  <nestedChildShapes>
+    <actorShape Id="5c08e214-4279-41bb-afa5-5a6fa1acd9d1" absoluteBounds="0.875, 3.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="19bab00f-2c59-4fdc-8b02-710a0d46ef46" LastKnownName="Merchant Service" />
+      <relativeChildShapes />
+    </actorShape>
+  </nestedChildShapes>
+</useCaseDiagram>

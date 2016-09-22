@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0aabacd5-8952-4a96-8e14-e34edfdd2bec" name="MainSiteUC" linkedPackageId="c455a279-3076-40cd-abbf-6f71cf2b879c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="0693095e-95bb-41c0-a40e-170451cb4336">
+      <profileInstance Id="bf57bcf9-eab3-4243-b7ba-587716b5be7c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7063562c-575c-4537-a2c6-80874932c1ef">
+      <profileInstance Id="11940620-e005-414f-b337-81ee2dfa2d9d" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d05562da-c091-4f8d-8b12-b41abace243d" name="Merchant  Users" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6966ea57-7fe0-42e7-8ad5-21ff32e539ed" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1161771e-5bfe-46dd-b2e5-07cdc60aeb6e" name="Anyone" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="91cab2ed-5e59-430f-938c-c4550cf9cbab" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e323f5cb-8925-4a3a-8a94-5ce63de6d78b" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a0bfb3b-8a39-49d5-800d-93b82b062eef" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="c455a279-3076-40cd-abbf-6f71cf2b879c" name="ModelingOfKkp">
+    <elementDefinition Id="fff80fce-0e4b-49ec-87bc-de9de829d50e" />
+  </package>
+</useCaseModelRoot>

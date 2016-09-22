@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="MainSiteUC">
+  <useCaseModelRootMoniker Id="0aabacd5-8952-4a96-8e14-e34edfdd2bec" />
+  <nestedChildShapes>
+    <actorShape Id="d10be0fd-999a-4116-befc-8d921ad1c82e" absoluteBounds="1.375, 3, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="d05562da-c091-4f8d-8b12-b41abace243d" LastKnownName="Merchant  Users" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="01c13369-782f-47ed-8aca-928d9ce49377" absoluteBounds="1.375, 4.25, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="1161771e-5bfe-46dd-b2e5-07cdc60aeb6e" LastKnownName="Anyone" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="6602ce73-5479-4192-a909-8f5e1897569b" absoluteBounds="3, 1.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="e323f5cb-8925-4a3a-8a94-5ce63de6d78b" />
+      <relativeChildShapes />
+    </useCaseShape>
+  </nestedChildShapes>
+</useCaseDiagram>
